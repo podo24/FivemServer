@@ -1,7 +1,7 @@
---- player-data is a basic resource to showcase player identifier storage
+--- 플레이어-데이터는 플레이어 식별자 스토리지를 보여주는 기본 리소스입니다
 --
--- it works in a fairly simple way: a set of identifiers is assigned to an account ID, and said
--- account ID is then returned/added as state bag
+-- 상당히 간단한 방법으로 작동합니다. 계정 ID에 식별자 집합이 할당되고 다음과 같이 말합니다
+-- 그런 다음 계정 ID가 반환/상태 가방으로 추가됩니다
 --
 -- it also implements the `cfx.re/playerData.v1alpha1` spec, which is exposed through the following:
 -- - getPlayerId(source: string)
@@ -14,9 +14,9 @@ local identifierBlocklist = {
     ip = true
 }
 
--- function to check if the identifier is blocked
+-- 기능 식별자가 차단되었는지 확인하는 기능
 local function isIdentifierBlocked(identifier)
-    -- Lua pattern to correctly split
+    -- LUA 패턴이 올바르게 분할됩니다
     local idType = identifier:match('([^:]+):')
 
     -- ensure it's a boolean

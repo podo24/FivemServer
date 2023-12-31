@@ -1,4 +1,4 @@
--- This resource is part of the default Cfx.re asset pack (cfx-server-data)
+-- 이 리소스는 기본 CFX.RE 자산 팩 (CFX-Server-Data)의 일부입니다.
 -- Altering or recreating for local use only is strongly discouraged.
 
 version '1.0.0'
